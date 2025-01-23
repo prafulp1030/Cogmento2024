@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 
 import BaseLayer.BaseClass;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
 public class HomePageStep extends BaseClass {
@@ -15,6 +16,12 @@ public class HomePageStep extends BaseClass {
 
 		Assert.assertEquals(actualLogo, true);
 
+	}
+
+	@Given("user validate home page title")
+	public void user_validate_home_page_title() {
+
+		Assert.assertEquals(driver.getTitle(), "Cogmento CRM");
 	}
 
 }
