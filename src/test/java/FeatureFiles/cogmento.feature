@@ -10,3 +10,7 @@ Feature: Test Cogmento CRM
 
   Scenario: validate home page tite functionality
     And user validate home page title
+    
+      Scenario: validate home page url functionality
+    And user validate home page url
+    
