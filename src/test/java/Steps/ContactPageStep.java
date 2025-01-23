@@ -19,4 +19,10 @@ public class ContactPageStep extends BaseClass {
 
 		Assert.assertEquals(driver.getCurrentUrl().contains("contacts"), true);
 	}
+
+	@Given("user click on contact create link")
+	public void user_click_on_contact_create_link() {
+		driver.findElement(By.xpath("//a[@href='/contacts/new']")).click();
+
+	}
 }
