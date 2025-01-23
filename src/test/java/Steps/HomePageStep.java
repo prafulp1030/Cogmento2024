@@ -24,4 +24,11 @@ public class HomePageStep extends BaseClass {
 		Assert.assertEquals(driver.getTitle(), "Cogmento CRM");
 	}
 
+	@Given("user validate home page url")
+	public void user_validate_home_page_url() {
+
+		Assert.assertEquals(driver.getCurrentUrl().contains("cogmento"), true);
+
+	}
+
 }
