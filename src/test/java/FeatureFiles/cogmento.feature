@@ -17,3 +17,6 @@ Feature: Test Cogmento CRM
   Scenario: validate contact page page url functionality
     And user click on contact link
     And user validate contact keyword
+
+  Scenario: validate contact create page page url functionality
+    And user click on contact create link
