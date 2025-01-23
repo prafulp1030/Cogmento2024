@@ -7,3 +7,6 @@ Feature: Test Cogmento CRM
 
   Scenario: validate home page functionality
     When user is on home page and validate logo
+
+  Scenario: validate home page tite functionality
+    And user validate home page title
